@@ -23,8 +23,8 @@ class Instructor extends Person {
   }
   grade(student, subject) {
     let grading = 0
-    grading = Math.floor(Math.random() * Math.floor(grading > 0 ? -25 : 25));
-    student.grade = grading 
+    grading = Math.floor(Math.random() * Math.floor(student.grade > 0 ? -25 : 25));
+    student.grade += grading
     console.log(`${student.name} receives a ${grading} on ${subject}`);
   }
 }
@@ -102,6 +102,7 @@ const patrick = new Student({
   favSubjects: ["Javascript", "CSS", "HTML"]
 });
 
+/*
 console.log(gabe.name)
 console.log(gabe.location)
 gabe.demo("Pre-processors")
@@ -110,3 +111,4 @@ console.log(giacomo.age)
 giacomo.grade(patrick, "CSS")
 giacomo.standUp("#webeu2_giacomo")
 console.log(giacomo.gradClassName)
+*/

@@ -87,7 +87,7 @@ const giacomo = new ProjectManagers({
   gender: "male",
   favLanguage: "JavaScript",
   specialty: "Front-end",
-  catchPhrase: "I'm proud of you guys",
+  catchPhrase: "Yea that's good, yea that's great",
   gradClassName: "WEBEU1 ?",
   favInstructor: "Gabe",
 });

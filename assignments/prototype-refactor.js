@@ -133,7 +133,7 @@ class CharacterStats extends GameObject{
     language: 'Japanese',
   });
 
-  
+
   const luffy = new Figher({ //hero
     createdAt: new Date(),
     dimensions: {
@@ -150,3 +150,24 @@ class CharacterStats extends GameObject{
     ],
     language: 'Japanese',
   });
+  console.log("Enter game() in the console to see the battle fold out.")
+  function game(){
+    setTimeout( () =>  console.log("#######################"), 500)
+    setTimeout( () =>  console.log("##### GAME BEGINS #####"), 750)
+    setTimeout( () =>  console.log("#######################"), 1000)
+    setTimeout( () =>  luffy.dealDamage(kaido, 35), 2000)
+    setTimeout( () =>  kaido.dealDamage(luffy, 50), 4000)
+    setTimeout( () =>  luffy.dealDamage(kaido, 45), 6000)
+    setTimeout( () =>  luffy.dealDamage(kaido, 90), 8000)
+    setTimeout( () =>  kaido.dealDamage(luffy, 74), 10000)
+    setTimeout( () =>  luffy.dealDamage(kaido, 100), 12000)
+    setTimeout( () =>  console.log(`${luffy.name} enfuriated ${kaido.name}`), 14000)
+    setTimeout( () =>  console.log(`The ${kaido.team} kidnapped The ${luffy.team}`), 16000)
+    setTimeout( () =>  kaido.dealDamage(luffy, 24), 18000)
+    setTimeout( () =>  console.log(`${kaido.name} gave ${luffy.name} a beating but he managed to get away...`), 20000)
+    setTimeout( () =>  console.log(`The fog off the battle lifts, The ${luffy.team} dissapeared...`), 20000)
+    setTimeout( () =>  console.log(`In whom's hands are the ${luffy.team} now...`), 22000)
+    setTimeout( () =>  console.log("##############################"), 23000)
+    setTimeout( () =>  console.log("##### TO BE CONTINUED... #####"), 23500)
+    setTimeout( () =>  console.log("##############################"), 24000)
+}

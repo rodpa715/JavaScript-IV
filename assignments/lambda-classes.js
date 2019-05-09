@@ -23,7 +23,7 @@ class Instructor extends Person {
   }
   grade(student, subject) {
     let grading = 0
-    grading = Math.floor(Math.random() * Math.floor(student.grade > 0 ? -25 : 25));
+    grading = Math.floor(Math.random() * Math.floor(grading > 0 ? -25 : 25));
     student.grade = grading 
     console.log(`${student.name} receives a ${grading} on ${subject}`);
   }

@@ -63,7 +63,7 @@ class ProjectManagers extends Instructor {
     this.favInstructor = attributes.favInstructor;
   }
   standUp(channel) {
-    console.log(`${name} announces to ${channel}, @channel standy times!​​​​​`);
+    console.log(`${this.name} announces to ${channel}, @channel standy times!​​​​​`);
   }
   debugsCode(student, subject) {
     console.log(`${this.name} debugs ${student.name}'s code on ${subject}`);
@@ -71,8 +71,8 @@ class ProjectManagers extends Instructor {
 }
 
 const gabe = new Instructor({
-  name: "Gabriel",
-  location: "Asgard",
+  name: "Gabe El Batman",
+  location: "Batcave",
   age: 33,
   gender: "male",
   favLanguage: "JavaScript",
@@ -80,15 +80,15 @@ const gabe = new Instructor({
   catchPhrase: "5 minutes brak guys",
 });
 
-const giaccomo = new ProjectManagers({
-  name: "Giaccomo",
+const giacomo = new ProjectManagers({
+  name: "Giacomo Il Robin",
   location: "Italy",
   age: 23,
   gender: "male",
   favLanguage: "JavaScript",
   specialty: "Front-end",
   catchPhrase: "I'm proud of you guys",
-  gradClassName: "WEBEU1?",
+  gradClassName: "WEBEU1 ?",
   favInstructor: "Gabe",
 });
 
@@ -102,4 +102,11 @@ const patrick = new Student({
   favSubjects: ["Javascript", "CSS", "HTML"]
 });
 
-
+console.log(gabe.name)
+console.log(gabe.location)
+gabe.demo("Pre-processors")
+console.log(giacomo.name)
+console.log(giacomo.age)
+giacomo.grade(patrick, "CSS")
+giacomo.standUp("#webeu2_giacomo")
+console.log(giacomo.gradClassName)
